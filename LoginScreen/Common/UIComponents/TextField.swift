@@ -19,6 +19,5 @@ private extension TextField {
     func setupUI() {
         textColor = .appText
         keyboardAppearance = .dark
-        defaultTextAttributes.updateValue(1, forKey: NSAttributedString.Key.kern)
     }
 }

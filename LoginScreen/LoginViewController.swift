@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     private let doneButtonBottomPaddingKeyboardDown: CGFloat = 47
 
     // MARK: - IBOutlets
-    @IBOutlet private var emailTextField: UITextField!
+    @IBOutlet private var emailTextField: TextField!
     @IBOutlet private var passwordTextField: TextField!
     @IBOutlet private var doneBottomButtonConstraint: NSLayoutConstraint!
     @IBOutlet private var doneButton: DoneButton!
@@ -61,8 +61,7 @@ private extension LoginViewController {
 private extension LoginViewController {
     func setupUI() {
         let placeholderAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.appText!,
-            NSAttributedString.Key.kern: 1
+            NSAttributedString.Key.foregroundColor: UIColor.appText!
         ] as [NSAttributedString.Key: Any]
         emailTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: placeholderAttributes)
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: placeholderAttributes)

@@ -15,8 +15,7 @@ class RevealButton: UIButton {
 
     func setState(_ state: RevealState) {
         let attr: [NSAttributedString.Key: Any] = [
-            NSAttributedString.Key.foregroundColor: UIColor.appText!,
-            NSAttributedString.Key.kern: 1
+            NSAttributedString.Key.foregroundColor: UIColor.appText!
         ]
         
         let title: String = {
