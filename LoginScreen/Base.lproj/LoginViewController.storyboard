@@ -8,30 +8,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="aRA-A4-Bks">
-                                <rect key="frame" x="-1713" y="144" width="3840" height="180"/>
+                                <rect key="frame" x="-753" y="144" width="1920" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="PJx-Ms-kJF"/>
+                                    <constraint firstAttribute="height" constant="150" id="PJx-Ms-kJF"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGi-w8-695">
-                                <rect key="frame" x="24" y="714" width="366" height="48"/>
-                                <color key="backgroundColor" name="Colors/Tint/Tab Bar/Unselected"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGi-w8-695" customClass="DoneButton" customModule="LoginScreen" customModuleProvider="target">
+                                <rect key="frame" x="24" y="767" width="366" height="48"/>
+                                <color key="backgroundColor" name="Colors/buttonBackground"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Y3C-XP-HIo"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Done">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" name="Colors/text"/>
+                                </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WZf-MH-82M">
                                 <rect key="frame" x="24" y="381.5" width="366" height="133"/>
@@ -47,6 +47,7 @@
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HHD-6m-2aj">
                                                 <rect key="frame" x="38" y="0.0" width="328" height="50"/>
+                                                <color key="textColor" name="Colors/text"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -72,15 +73,21 @@
                                                     <constraint firstAttribute="width" constant="30" id="0Rg-r4-1Xo"/>
                                                 </constraints>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LjZ-ih-QYI">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LjZ-ih-QYI" customClass="TextField" customModule="LoginScreen" customModuleProvider="target">
                                                 <rect key="frame" x="38" y="0.0" width="261" height="50"/>
+                                                <color key="textColor" name="Colors/text"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egb-wK-v2P">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egb-wK-v2P" customClass="RevealButton" customModule="LoginScreen" customModuleProvider="target">
                                                 <rect key="frame" x="299" y="0.0" width="67" height="50"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="SHOW"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="SHOW">
+                                                    <color key="baseForegroundColor" name="Colors/text"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="didPressRevealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ESm-xX-7x9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -112,20 +119,27 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="Colors/Background/Item"/>
+                        <color key="backgroundColor" name="Colors/background"/>
                         <constraints>
                             <constraint firstItem="aRA-A4-Bks" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7F9-mn-p0F"/>
-                            <constraint firstItem="WZf-MH-82M" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gt2-VM-sPH"/>
+                            <constraint firstItem="WZf-MH-82M" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" priority="999" id="Gt2-VM-sPH"/>
                             <constraint firstItem="hGi-w8-695" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WZf-MH-82M" secondAttribute="bottom" constant="20" id="Rca-gN-v7k"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hGi-w8-695" secondAttribute="trailing" constant="24" id="Ta1-TG-OyS"/>
                             <constraint firstItem="hGi-w8-695" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Tkr-Ca-Dzb"/>
                             <constraint firstItem="WZf-MH-82M" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aRA-A4-Bks" secondAttribute="bottom" constant="20" id="YvZ-3H-D0d"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hGi-w8-695" secondAttribute="bottom" constant="100" id="ih3-5K-tef"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hGi-w8-695" secondAttribute="bottom" constant="47" id="ih3-5K-tef"/>
                             <constraint firstItem="WZf-MH-82M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="nwE-Y8-7cN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WZf-MH-82M" secondAttribute="trailing" constant="24" id="sKS-2I-ajp"/>
-                            <constraint firstItem="aRA-A4-Bks" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ylM-tC-ryy"/>
+                            <constraint firstItem="aRA-A4-Bks" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="999" constant="100" id="ylM-tC-ryy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="doneBottomButtonConstraint" destination="ih3-5K-tef" id="JhH-FK-Zyf"/>
+                        <outlet property="doneButton" destination="hGi-w8-695" id="tbr-Bf-tqa"/>
+                        <outlet property="emailTextField" destination="HHD-6m-2aj" id="k4y-JL-CtD"/>
+                        <outlet property="passwordTextField" destination="LjZ-ih-QYI" id="Rt1-fY-H6b"/>
+                        <outlet property="revealPasswordButton" destination="Egb-wK-v2P" id="Nku-ke-NTH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,12 +149,15 @@
     <resources>
         <image name="icon-email" width="13" height="9"/>
         <image name="icon-password" width="10" height="13"/>
-        <image name="logo" width="3840" height="2160"/>
-        <namedColor name="Colors/Background/Item">
+        <image name="logo" width="1920" height="1080"/>
+        <namedColor name="Colors/background">
             <color red="0.050980392156862744" green="0.050980392156862744" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Colors/Tint/Tab Bar/Unselected">
-            <color red="0.35686274509803922" green="0.43137254901960786" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Colors/buttonBackground">
+            <color red="0.12200000137090683" green="0.15700000524520874" blue="0.19200000166893005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Colors/text">
+            <color red="0.90196078431372551" green="0.96078431372549022" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

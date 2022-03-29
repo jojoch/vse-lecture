@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="5cw-sg-c0A">
-                                <rect key="frame" x="-1713" y="144" width="3840" height="180"/>
+                                <rect key="frame" x="-753" y="144" width="1920" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="E8T-Ql-SRR"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="Colors/Background/Item"/>
+                        <color key="backgroundColor" name="Colors/background"/>
                         <constraints>
                             <constraint firstItem="5cw-sg-c0A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="7PZ-D8-Dff"/>
                             <constraint firstItem="5cw-sg-c0A" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CKs-Rj-VjY"/>
@@ -37,8 +37,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="3840" height="2160"/>
-        <namedColor name="Colors/Background/Item">
+        <image name="logo" width="1920" height="1080"/>
+        <namedColor name="Colors/background">
             <color red="0.050980392156862744" green="0.050980392156862744" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
