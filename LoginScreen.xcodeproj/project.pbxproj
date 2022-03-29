@@ -11,8 +11,12 @@
 		CA63CC3F27F2E9FE006852CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA63CC3E27F2E9FE006852CC /* SceneDelegate.swift */; };
 		CA63CC4127F2E9FE006852CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA63CC4027F2E9FE006852CC /* ViewController.swift */; };
 		CA63CC4427F2E9FE006852CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA63CC4227F2E9FE006852CC /* Main.storyboard */; };
-		CA63CC4627F2E9FF006852CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA63CC4527F2E9FF006852CC /* Assets.xcassets */; };
 		CA63CC4927F2E9FF006852CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA63CC4727F2E9FF006852CC /* LaunchScreen.storyboard */; };
+		CA7660D227F2ED9400D4B4E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7660D127F2ED9400D4B4E3 /* Assets.xcassets */; };
+		CA7660D627F2EDA300D4B4E3 /* ClashDisplay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA7660D427F2EDA300D4B4E3 /* ClashDisplay.ttf */; };
+		CA7660D727F2EDA300D4B4E3 /* Satoshi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA7660D527F2EDA300D4B4E3 /* Satoshi.ttf */; };
+		CA7660DB27F2EDEA00D4B4E3 /* Font+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7660D927F2EDEA00D4B4E3 /* Font+App.swift */; };
+		CA7660DC27F2EDEA00D4B4E3 /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7660DA27F2EDEA00D4B4E3 /* Color+App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +25,13 @@
 		CA63CC3E27F2E9FE006852CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CA63CC4027F2E9FE006852CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA63CC4327F2E9FE006852CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CA63CC4527F2E9FF006852CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA63CC4827F2E9FF006852CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA63CC4A27F2E9FF006852CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA7660D127F2ED9400D4B4E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA7660D427F2EDA300D4B4E3 /* ClashDisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClashDisplay.ttf; sourceTree = "<group>"; };
+		CA7660D527F2EDA300D4B4E3 /* Satoshi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Satoshi.ttf; sourceTree = "<group>"; };
+		CA7660D927F2EDEA00D4B4E3 /* Font+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+App.swift"; sourceTree = "<group>"; };
+		CA7660DA27F2EDEA00D4B4E3 /* Color+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		CA63CC3B27F2E9FE006852CC /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
+				CA7660D827F2EDE300D4B4E3 /* Styles */,
+				CA7660D027F2ED8500D4B4E3 /* Resources */,
 				CA63CC3C27F2E9FE006852CC /* AppDelegate.swift */,
 				CA63CC3E27F2E9FE006852CC /* SceneDelegate.swift */,
 				CA63CC4027F2E9FE006852CC /* ViewController.swift */,
 				CA63CC4227F2E9FE006852CC /* Main.storyboard */,
-				CA63CC4527F2E9FF006852CC /* Assets.xcassets */,
 				CA63CC4727F2E9FF006852CC /* LaunchScreen.storyboard */,
 				CA63CC4A27F2E9FF006852CC /* Info.plist */,
 			);
 			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		CA7660D027F2ED8500D4B4E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA7660D327F2ED9800D4B4E3 /* Fonts */,
+				CA7660D127F2ED9400D4B4E3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA7660D327F2ED9800D4B4E3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CA7660D427F2EDA300D4B4E3 /* ClashDisplay.ttf */,
+				CA7660D527F2EDA300D4B4E3 /* Satoshi.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CA7660D827F2EDE300D4B4E3 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				CA7660DA27F2EDEA00D4B4E3 /* Color+App.swift */,
+				CA7660D927F2EDEA00D4B4E3 /* Font+App.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA63CC4927F2E9FF006852CC /* LaunchScreen.storyboard in Resources */,
-				CA63CC4627F2E9FF006852CC /* Assets.xcassets in Resources */,
 				CA63CC4427F2E9FE006852CC /* Main.storyboard in Resources */,
+				CA7660D727F2EDA300D4B4E3 /* Satoshi.ttf in Resources */,
+				CA7660D627F2EDA300D4B4E3 /* ClashDisplay.ttf in Resources */,
+				CA7660D227F2ED9400D4B4E3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7660DB27F2EDEA00D4B4E3 /* Font+App.swift in Sources */,
+				CA7660DC27F2EDEA00D4B4E3 /* Color+App.swift in Sources */,
 				CA63CC4127F2E9FE006852CC /* ViewController.swift in Sources */,
 				CA63CC3D27F2E9FE006852CC /* AppDelegate.swift in Sources */,
 				CA63CC3F27F2E9FE006852CC /* SceneDelegate.swift in Sources */,
@@ -287,9 +327,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = THNASY6U4C;
+				DEVELOPMENT_TEAM = 9LTH2HR747;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoginScreen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -302,8 +343,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = none.LoginScreen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veronikazelinkova.rickandmorty.loginscreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,9 +357,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = THNASY6U4C;
+				DEVELOPMENT_TEAM = 9LTH2HR747;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoginScreen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -330,8 +373,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = none.LoginScreen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veronikazelinkova.rickandmorty.loginscreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
